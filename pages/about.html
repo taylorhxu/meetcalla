@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Calla</title>
+<meta name="description" content="Why we're building Calla — a community for lesbian and queer couples trying to conceive.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .manifesto { max-width:720px; margin:0 auto; padding:6rem 3rem; }
+  .manifesto p { font-size:1.15rem; line-height:1.85; color:var(--muted); font-weight:300; margin-bottom:1.75rem; }
+  .manifesto p strong { color:var(--ink); font-weight:500; }
+  .manifesto p em { font-style:italic; color:var(--teal); }
+  .values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--border-light); margin-top:4rem; }
+  .value-card { padding:2.5rem 2rem; border-right:1px solid var(--border-light); border-bottom:1px solid var(--border-light); transition:background 0.3s; }
+  .value-card:hover { background:rgba(45,106,106,0.08); }
+  .value-card:nth-child(3n) { border-right:none; }
+  .value-card:nth-last-child(-n+3) { border-bottom:none; }
+  .value-icon { font-size:1.5rem; margin-bottom:1rem; }
+  .value-card h3 { font-family:'Playfair Display',serif; font-size:1.15rem; font-weight:700; margin-bottom:0.6rem; color:var(--cream); }
+  .value-card p { font-size:0.85rem; color:rgba(251,245,238,0.55); line-height:1.65; font-weight:300; }
+  .timeline { max-width:640px; margin:4rem auto 0; }
+  .timeline-item { display:grid; grid-template-columns:100px 1fr; gap:2rem; padding:2rem 0; border-bottom:1px solid var(--border); align-items:start; }
+  .timeline-item:last-child { border-bottom:none; }
+  .timeline-date { font-family:'DM Mono',monospace; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--teal); padding-top:0.2rem; }
+  .timeline-content h4 { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; margin-bottom:0.4rem; }
+  .timeline-content p { font-size:0.85rem; color:var(--muted); line-height:1.65; font-weight:300; }
+  @media(max-width:860px) {
+    .manifesto { padding:4rem 1.5rem; }
+    .values-grid { grid-template-columns:1fr; }
+    .value-card { border-right:none !important; }
+    .timeline-item { grid-template-columns:80px 1fr; gap:1rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a class="nav-logo" href="../index.html">Calla</a>
+  <div class="nav-links">
+    <a href="research.html">Research</a>
+    <a href="features.html">Features</a>
+    <a href="about.html" style="color:var(--ink);font-weight:500;">About</a>
+    <a href="../index.html#waitlist" class="nav-cta">Join Calla</a>
+  </div>
+  <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="research.html">Research</a>
+  <a href="features.html">Features</a>
+  <a href="about.html">About</a>
+  <a href="../index.html#waitlist" class="mobile-cta">Join Calla</a>
+</div>
+
+<div class="page-hero">
+  <div class="section-label">About Calla</div>
+  <h1 class="section-title">Built by the<br>community it<br><em>belongs to.</em></h1>
+  <p class="section-body">Calla exists because we looked for the community we needed when we were trying to conceive — and it wasn't there. So we decided to build it.</p>
+</div>
+
+<!-- MANIFESTO -->
+<div class="manifesto fade-in">
+  <p><strong>The journey to motherhood as a queer couple is extraordinary.</strong> It's also lonely, expensive, confusing, and stacked against you by a system that still treats heterosexual couples as the default.</p>
+
+  <p>The NHS makes same-sex couples jump through hoops that straight couples never face. You can spend <em>£50,000 proving you're infertile</em> before you access the same treatment your neighbours get for free. Only 4 of 42 Integrated Care Boards in England have implemented equal access, despite commitments made in 2022.</p>
+
+  <p>And when you go looking for support — for real experiences, real information, real community — you find fertility forums full of people whose journey looks nothing like yours, apps that assume intercourse, and sperm bank websites that all look like they were designed in 2003.</p>
+
+  <p>Calla is built on a different starting point: <em>queer couples trying to conceive deserve a home</em>. Not a retrofitted tool. Not a subforum. A real community, built from the ground up for the people who need it.</p>
+
+  <p>A place where you can find someone who's six months ahead of you on the same route. Where the ICB information for your postcode is one search away. Where you can compare donors across every UK bank without visiting five different websites. Where someone will tell you what reciprocal IVF actually feels like, not just what it is.</p>
+
+  <p><strong>Calla is that place.</strong> We're building it in London, for the UK first. We're building with our community, shaped by the people who know this journey from the inside.</p>
+</div>
+
+<!-- VALUES -->
+<section class="fade-in" style="background:var(--ink);color:var(--cream);">
+  <div class="section-label" style="color:var(--teal-light);">What we stand for</div>
+  <h2 class="section-title" style="color:var(--cream);">Our values aren't<br><em style="color:var(--teal-light);">decoration.</em></h2>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">🌸</div>
+      <h3>Community First</h3>
+      <p>Calla is a community that happens to have great tools — not a tool that tacked on a forum. The people you meet here matter as much as the information.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🌈</div>
+      <h3>Queer-First, Always</h3>
+      <p>We design from queer experiences outward. Every default, every label, every journey is built for lesbian and queer couples — not retrofitted for them.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">📊</div>
+      <h3>Evidence-Based</h3>
+      <p>We cite our sources. Every statistic comes from HFEA, NICE, ONS, or peer-reviewed research. Real information, not reassurance.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🔒</div>
+      <h3>Privacy-First</h3>
+      <p>Your fertility data is among the most sensitive information you have. We will never sell it, share it, or use it for advertising. Your data is yours.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">⚖️</div>
+      <h3>Radical Accessibility</h3>
+      <p>Fertility inequality is compounded by class. Core features of Calla will always be free. We're also building grant and finance navigation for queer families.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🌍</div>
+      <h3>Intersectional by Design</h3>
+      <p>Race, ethnicity, trans identity, disability, and income all shape the TTC experience. Calla is built for the whole queer community — not just one part of it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="fade-in">
+  <div class="section-label">Roadmap</div>
+  <h2 class="section-title">Where we are<br>and where<br><em>we're going.</em></h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">✓ Done</div>
+      <div class="timeline-content">
+        <h4>Research & Community</h4>
+        <p>Published market research. Built the waitlist. Listened to queer couples across the UK who are TTC. Confirmed the gap is real and the need is urgent.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">✓ Done</div>
+      <div class="timeline-content">
+        <h4>Private Beta</h4>
+        <p>First members tested the community, NHS Navigator, and Pathway Planner. Real TTC couples shaped every feature before launch.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Now · Q2 2026</div>
+      <div class="timeline-content">
+        <h4>Public Launch — UK 🌸</h4>
+        <p>Calla is live. TTC community, NHS Navigator, Donor Compare, Cycle Tracker, Clinic Ratings, Legal Rights, and Pathway Planner. Free core tier, optional premium.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Next</div>
+      <div class="timeline-content">
+        <h4>The Full Platform</h4>
+        <p>Calla as a full social platform — @meetcalla — connecting queer parents from TTC through pregnancy, birth, and beyond. A community for life, not just a season.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="waitlist-section fade-in" id="waitlist">
+  <div class="waitlist-inner">
+    <div class="section-label" style="justify-content:center;color:rgba(251,245,238,0.4);">Join Us</div>
+    <h2 class="waitlist-title">This community<br>is yours too.</h2>
+    <p class="waitlist-sub">Every person on the waitlist helps shape what Calla becomes. Your experience, your frustrations, your needs — they're what we build.</p>
+    <form class="waitlist-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <input type="email" placeholder="your@email.com" required id="emailInput">
+        <button type="submit">Join Now</button>
+      </div>
+      <div class="form-note">No spam. Just updates when it matters.</div>
+      <div class="form-success" id="formSuccess" style="display:none;">✓ Welcome to Calla.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Calla</div>
+      <p class="footer-tagline">The community for lesbian and queer couples trying to conceive. Built in London, for queer parents everywhere.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Product</div>
+        <a href="features.html">Features</a>
+        <a href="research.html">Research</a>
+        <a href="../index.html#waitlist">Waitlist</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© Calla 2026 · meetcalla.com · Built in London</span>
+    <span class="footer-sources">Data: HFEA · NICE · ONS · Grand View Research · Mordor Intelligence · British Fertility Society</span>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
